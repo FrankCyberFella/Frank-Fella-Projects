@@ -1,0 +1,1 @@
+This is holding a place in the folder since git will not store emopty folders

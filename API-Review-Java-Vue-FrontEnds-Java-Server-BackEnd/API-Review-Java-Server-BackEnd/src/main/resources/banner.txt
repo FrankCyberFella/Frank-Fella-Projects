@@ -1,0 +1,14 @@
+  A)aa   P)ppppp  I)iiii    R)rrrrr                   ##
+ A)  aa  P)    pp   I)      R)    rr
+A)    aa P)ppppp    I)      R)  rrr  e)EEEEE v)    VV i) e)EEEEE w)      WW
+A)aaaaaa P)         I)      R) rr    e)EEEE   v)  VV  i) e)EEEE  w)  WW  WW
+A)    aa P)         I)      R)   rr  e)        v)VV   i) e)      w)  WW  WW
+A)    aa P)       I)iiii    R)    rr  e)EEEE    v)    i)  e)EEEE  w)WW WWW
+
+
+ S)ssss
+S)    ss
+ S)ss    e)EEEEE  r)RRR  v)    VV e)EEEEE  r)RRR
+     S)  e)EEEE  r)   RR  v)  VV  e)EEEE  r)   RR
+S)    ss e)      r)        v)VV   e)      r)
+ S)ssss   e)EEEE r)         v)     e)EEEE r)
