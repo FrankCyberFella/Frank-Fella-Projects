@@ -1,0 +1,9 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: lambdaapp.LambdaHandler::handleRequest
+      CodeUri: s3://franksawsbucket1/026180dea2a1f8eba7a45d155e08fdd7
+      Runtime: java11
