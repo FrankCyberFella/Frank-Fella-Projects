@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_ASm20Pe-EeuQ6PDqa-3Www">
+  <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AcQiEPe-EeuQ6PDqa-3Www"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_AexDgPe-EeuQ6PDqa-3Www" source="_AexDife-EeuQ6PDqa-3Www">
+    <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdWHMfe-EeuQ6PDqa-3Www"/>
+    <stereotypes xmi:id="_AexDgfe-EeuQ6PDqa-3Www" name="Reference">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdWHM_e-EeuQ6PDqa-3Www"/>
+    </stereotypes>
+    <nameVisual xmi:id="_AexDgve-EeuQ6PDqa-3Www" text=""/>
+    <sourceRole xmi:id="_AexDg_e-EeuQ6PDqa-3Www" aggregationKind="NONE" name="">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdWHMve-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_AexDhPe-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_AexDhfe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_AexDhve-EeuQ6PDqa-3Www" aggregationKind="NONE" name="aHand" navigable="true">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdNkU_e-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_AexDh_e-EeuQ6PDqa-3Www" label="-"/>
+      <cardinality xmi:id="_AexDiPe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Ae8psPe-EeuQ6PDqa-3Www" sourceAnchor="144.0,0.0" targetAnchor="262.0,80.0" dashed="true" superClass="_Ae-e4Pe-EeuQ6PDqa-3Www" subClass="_AexDife-EeuQ6PDqa-3Www">
+    <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdEaYPe-EeuQ6PDqa-3Www"/>
+    <visualProperties xmi:id="_P9bw8Pe-EeuQ6PDqa-3Www" position="98.0,5.0"/>
+    <bendpoints xmi:id="_QCG1kPe-EeuQ6PDqa-3Www" sourceY="-98" targetX="158"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Ae8psfe-EeuQ6PDqa-3Www" source="_Ae-e4Pe-EeuQ6PDqa-3Www">
+    <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdVgIPe-EeuQ6PDqa-3Www"/>
+    <stereotypes xmi:id="_Ae9Qw_e-EeuQ6PDqa-3Www" name="Reference">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdWHMPe-EeuQ6PDqa-3Www"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Ae9QwPe-EeuQ6PDqa-3Www" text=""/>
+    <sourceRole xmi:id="_Ae9Qwfe-EeuQ6PDqa-3Www" aggregationKind="NONE" name="">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdVgIfe-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_Ae930fe-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_Ae930Pe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Ae9Qwve-EeuQ6PDqa-3Www" aggregationKind="NONE" name="hand" navigable="true">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_Achn0Pe-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_Ae930_e-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_Ae930ve-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_AfCJQPe-EeuQ6PDqa-3Www" source="_AfCJSfe-EeuQ6PDqa-3Www">
+    <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdWHNPe-EeuQ6PDqa-3Www"/>
+    <stereotypes xmi:id="_AfCJQfe-EeuQ6PDqa-3Www" name="Reference">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdWuQPe-EeuQ6PDqa-3Www"/>
+    </stereotypes>
+    <nameVisual xmi:id="_AfCJQve-EeuQ6PDqa-3Www" text=""/>
+    <sourceRole xmi:id="_AfCJQ_e-EeuQ6PDqa-3Www" aggregationKind="NONE" name="">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdWHNfe-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_AfCJRPe-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_AfCJRfe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_AfCJRve-EeuQ6PDqa-3Www" aggregationKind="NONE" name="deckOfCards" navigable="true">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdOLYve-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_AfCJR_e-EeuQ6PDqa-3Www" label="~"/>
+      <cardinality xmi:id="_AfCJSPe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Ae3KIPe-EeuQ6PDqa-3Www" name="PlayingCard">
+    <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_Aci18Pe-EeuQ6PDqa-3Www"/>
+    <visualProperties xmi:id="_Ae3KIfe-EeuQ6PDqa-3Www" position="-460.0,-393.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Ae3KIve-EeuQ6PDqa-3Www" label="+"/>
+    <attributes xmi:id="_Ae3KI_e-EeuQ6PDqa-3Www" defaultValue="0" name="DEFAULTCARDVALUE" staticAttribute="true">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdQAkPe-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_Ae3KJPe-EeuQ6PDqa-3Www" label="-"/>
+      <cardinality xmi:id="_Ae3KJfe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <type xmi:id="_Ae3KJve-EeuQ6PDqa-3Www" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ae3KJ_e-EeuQ6PDqa-3Www" defaultValue="&quot;BLACK&quot;" name="DEFAULTCOLOR" staticAttribute="true">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdQAkve-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_Ae3KKPe-EeuQ6PDqa-3Www" label="-"/>
+      <cardinality xmi:id="_Ae3KKfe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <type xmi:id="_Ae3KKve-EeuQ6PDqa-3Www" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ae3KK_e-EeuQ6PDqa-3Www" defaultValue="&quot;JOKER&quot;" name="DEFAULTSUIT" staticAttribute="true">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdQAlPe-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_Ae3KLPe-EeuQ6PDqa-3Www" label="-"/>
+      <cardinality xmi:id="_Ae3KLfe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <type xmi:id="_Ae3KLve-EeuQ6PDqa-3Www" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ae3KL_e-EeuQ6PDqa-3Www" defaultValue="13" name="MAXVALUE" staticAttribute="true">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdQAlve-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_Ae3KMPe-EeuQ6PDqa-3Www" label="-"/>
+      <cardinality xmi:id="_Ae3KMfe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <type xmi:id="_Ae3KMve-EeuQ6PDqa-3Www" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ae3KM_e-EeuQ6PDqa-3Www" defaultValue="0" name="MINVALUE" staticAttribute="true">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdQnoPe-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_Ae3KNPe-EeuQ6PDqa-3Www" label="-"/>
+      <cardinality xmi:id="_Ae3KNfe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <type xmi:id="_Ae3KNve-EeuQ6PDqa-3Www" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ae3KN_e-EeuQ6PDqa-3Www" defaultValue="new HashMap&lt;String , String>()" name="suitMap" staticAttribute="true">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdQnove-EeuQ6PDqa-3Www"/>
+      <stereotypes xmi:id="_Ae3KOPe-EeuQ6PDqa-3Www" name="LegacyStyledElement">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdQnpPe-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <visibility xmi:id="_Ae3KOfe-EeuQ6PDqa-3Www" label="-"/>
+      <cardinality xmi:id="_Ae3KOve-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <type xmi:id="_Ae3KO_e-EeuQ6PDqa-3Www" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ae3KPPe-EeuQ6PDqa-3Www" defaultValue="new TreeMap&lt;Integer, String>()" name="valueMap" staticAttribute="true">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdROsPe-EeuQ6PDqa-3Www"/>
+      <stereotypes xmi:id="_Ae3KPfe-EeuQ6PDqa-3Www" name="LegacyStyledElement">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdROsve-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <visibility xmi:id="_Ae3KPve-EeuQ6PDqa-3Www" label="-"/>
+      <cardinality xmi:id="_Ae3KP_e-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <type xmi:id="_Ae3KQPe-EeuQ6PDqa-3Www" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ae3KQfe-EeuQ6PDqa-3Www" name="value">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdROtPe-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_Ae3KQve-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_Ae3KQ_e-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <type xmi:id="_Ae3KRPe-EeuQ6PDqa-3Www" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ae3KRfe-EeuQ6PDqa-3Www" name="color">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdROtfe-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_Ae3KRve-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_Ae3KR_e-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <type xmi:id="_Ae3KSPe-EeuQ6PDqa-3Www" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ae3KSfe-EeuQ6PDqa-3Www" name="suit">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdROtve-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_Ae3KSve-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_Ae3KS_e-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <type xmi:id="_Ae3KTPe-EeuQ6PDqa-3Www" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Ae3KTfe-EeuQ6PDqa-3Www" name="_initializer1" staticOperation="true">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AcjdAPe-EeuQ6PDqa-3Www"/>
+      <keywords xmi:id="_Ae3KTve-EeuQ6PDqa-3Www" keyword="init"/>
+      <stereotypes xmi:id="_Ae3KT_e-EeuQ6PDqa-3Www" name="LegacyStyledElement">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AckEEPe-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <visibility xmi:id="_Ae3KUPe-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_Ae3KUfe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_Ae3KUve-EeuQ6PDqa-3Www" name="PlayingCard">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AckEEfe-EeuQ6PDqa-3Www"/>
+      <keywords xmi:id="_Ae3KU_e-EeuQ6PDqa-3Www" keyword="create"/>
+      <visibility xmi:id="_Ae3KVPe-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_Ae3KVfe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Ae3KVve-EeuQ6PDqa-3Www">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AckEFve-EeuQ6PDqa-3Www"/>
+        <type xmi:id="_Ae3KV_e-EeuQ6PDqa-3Www" name="PlayingCard">
+          <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_Aci18Pe-EeuQ6PDqa-3Www"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Ae3KWPe-EeuQ6PDqa-3Www" name="value">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AckEEve-EeuQ6PDqa-3Www"/>
+        <cardinality xmi:id="_Ae3KWfe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+        <type xmi:id="_Ae3KWve-EeuQ6PDqa-3Www" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Ae3KW_e-EeuQ6PDqa-3Www" name="suit">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AckEE_e-EeuQ6PDqa-3Www"/>
+        <cardinality xmi:id="_Ae3KXPe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+        <type xmi:id="_Ae3KXfe-EeuQ6PDqa-3Www" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Ae3KXve-EeuQ6PDqa-3Www" name="setValue">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AckrIPe-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_Ae3KX_e-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_Ae3KYPe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Ae3KYfe-EeuQ6PDqa-3Www" name="value">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AckrIfe-EeuQ6PDqa-3Www"/>
+        <cardinality xmi:id="_Ae3KYve-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+        <type xmi:id="_Ae3KY_e-EeuQ6PDqa-3Www" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Ae3KZPe-EeuQ6PDqa-3Www" name="setColor">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AckrIve-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_Ae3KZfe-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_Ae3KZve-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_Ae3KZ_e-EeuQ6PDqa-3Www" name="setSuit">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AckrI_e-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_Ae3KaPe-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_Ae3Kafe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Ae3Kave-EeuQ6PDqa-3Www" name="suit">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AckrJPe-EeuQ6PDqa-3Www"/>
+        <cardinality xmi:id="_Ae3Ka_e-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+        <type xmi:id="_Ae3KbPe-EeuQ6PDqa-3Www" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Ae3Kbfe-EeuQ6PDqa-3Www" name="getValueName">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AckrJfe-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_Ae3Kbve-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_Ae3Kb_e-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Ae3KcPe-EeuQ6PDqa-3Www">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AclSMPe-EeuQ6PDqa-3Www"/>
+        <type xmi:id="_Ae3Kcfe-EeuQ6PDqa-3Www" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Ae3Kcve-EeuQ6PDqa-3Www" name="initializeMaps" staticOperation="true">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AclSMfe-EeuQ6PDqa-3Www"/>
+      <stereotypes xmi:id="_Ae3Kc_e-EeuQ6PDqa-3Www" name="LegacyStyledElement">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AclSMve-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <visibility xmi:id="_Ae3KdPe-EeuQ6PDqa-3Www" label="-"/>
+      <cardinality xmi:id="_Ae3Kdfe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_Ae3Kdve-EeuQ6PDqa-3Www" name="toString">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AclSM_e-EeuQ6PDqa-3Www"/>
+      <stereotypes xmi:id="_Ae3Kd_e-EeuQ6PDqa-3Www" name="LegacyStyledElement">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_Acl5QPe-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Ae3KePe-EeuQ6PDqa-3Www" name="Annotations">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_Acl5Qfe-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <visibility xmi:id="_Ae3Kefe-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_Ae3Keve-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Ae3Ke_e-EeuQ6PDqa-3Www">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AclSNPe-EeuQ6PDqa-3Www"/>
+        <type xmi:id="_Ae3KfPe-EeuQ6PDqa-3Www" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Ae3Kffe-EeuQ6PDqa-3Www" name="equals">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdLvI_e-EeuQ6PDqa-3Www"/>
+      <stereotypes xmi:id="_Ae3Kfve-EeuQ6PDqa-3Www" name="LegacyStyledElement">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdMWMve-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Ae3Kf_e-EeuQ6PDqa-3Www" name="Annotations">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdMWM_e-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <visibility xmi:id="_Ae3KgPe-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_Ae3Kgfe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Ae3Kgve-EeuQ6PDqa-3Www">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdMWMfe-EeuQ6PDqa-3Www"/>
+        <type xmi:id="_Ae3Kg_e-EeuQ6PDqa-3Www" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Ae3KhPe-EeuQ6PDqa-3Www" name="obj">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdMWMPe-EeuQ6PDqa-3Www"/>
+        <cardinality xmi:id="_Ae3Khfe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+        <type xmi:id="_Ae3Khve-EeuQ6PDqa-3Www" name="Object">
+          <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdLvIfe-EeuQ6PDqa-3Www"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_AfFMkPe-EeuQ6PDqa-3Www" name="TestCardApp">
+    <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AcnHYPe-EeuQ6PDqa-3Www"/>
+    <visualProperties xmi:id="_AfFMkfe-EeuQ6PDqa-3Www" position="-751.0,-13.0" size="-1.0,-1.0" visible="false"/>
+    <visibility xmi:id="_AfFMkve-EeuQ6PDqa-3Www" label="+"/>
+    <operations xmi:id="_AfFMk_e-EeuQ6PDqa-3Www" name="main" staticOperation="true">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AcnucPe-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_AfFMlPe-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_AfFMlfe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <parameters xmi:id="_AfFMlve-EeuQ6PDqa-3Www" name="args">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_Acnucfe-EeuQ6PDqa-3Www"/>
+        <cardinality xmi:id="_AfFMl_e-EeuQ6PDqa-3Www" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_AfFMmPe-EeuQ6PDqa-3Www" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_AexDife-EeuQ6PDqa-3Www" name="BlackJackHand" associationsOut="_AexDgPe-EeuQ6PDqa-3Www" generalizations="_Ae8psPe-EeuQ6PDqa-3Www">
+    <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AcZsAPe-EeuQ6PDqa-3Www"/>
+    <visualProperties xmi:id="_AexDive-EeuQ6PDqa-3Www" position="243.0,103.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_AexDi_e-EeuQ6PDqa-3Www" label="+"/>
+    <attributes xmi:id="_AexDjPe-EeuQ6PDqa-3Www" defaultValue="2" name="numCardsInHand">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdNkUPe-EeuQ6PDqa-3Www"/>
+      <stereotypes xmi:id="_AexDjfe-EeuQ6PDqa-3Www" name="LegacyStyledElement">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdNkUve-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <visibility xmi:id="_AexDjve-EeuQ6PDqa-3Www" label="-"/>
+      <cardinality xmi:id="_AexDj_e-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <type xmi:id="_AexDkPe-EeuQ6PDqa-3Www" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AexDkfe-EeuQ6PDqa-3Www" name="aHand">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdNkU_e-EeuQ6PDqa-3Www"/>
+      <stereotypes xmi:id="_AexDkve-EeuQ6PDqa-3Www" name="Generics">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdOLYPe-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <stereotypes xmi:id="_AexDk_e-EeuQ6PDqa-3Www" name="LegacyStyledElement">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdOLYfe-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <visibility xmi:id="_AexDlPe-EeuQ6PDqa-3Www" label="-"/>
+      <cardinality xmi:id="_AexDlfe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <type xmi:id="_AexDlve-EeuQ6PDqa-3Www" name="ArrayList">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdB-IPe-EeuQ6PDqa-3Www"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_AexDl_e-EeuQ6PDqa-3Www" name="BlackJackHand">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AccIQPe-EeuQ6PDqa-3Www"/>
+      <keywords xmi:id="_AexDmPe-EeuQ6PDqa-3Www" keyword="create"/>
+      <visibility xmi:id="_AexDmfe-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_AexDmve-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AexDm_e-EeuQ6PDqa-3Www">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AccIQ_e-EeuQ6PDqa-3Www"/>
+        <type xmi:id="_AexDnPe-EeuQ6PDqa-3Www" name="BlackJackHand">
+          <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AcZsAPe-EeuQ6PDqa-3Www"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_AexDnfe-EeuQ6PDqa-3Www" name="getHand">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AccIRPe-EeuQ6PDqa-3Www"/>
+      <stereotypes xmi:id="_AexDnve-EeuQ6PDqa-3Www" name="Generics">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AccvUPe-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <stereotypes xmi:id="_AexDn_e-EeuQ6PDqa-3Www" name="LegacyStyledElement">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AcdWYPe-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <stereotypes xmi:id="_AexDoPe-EeuQ6PDqa-3Www" name="Annotations">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AcdWYfe-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <visibility xmi:id="_AexDofe-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_AexDove-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AexDo_e-EeuQ6PDqa-3Www">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdKhAPe-EeuQ6PDqa-3Www"/>
+        <type xmi:id="_AexDpPe-EeuQ6PDqa-3Www" name="ArrayList">
+          <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdB-IPe-EeuQ6PDqa-3Www"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_AexDpfe-EeuQ6PDqa-3Www" name="emptyHand">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AcdWY_e-EeuQ6PDqa-3Www"/>
+      <stereotypes xmi:id="_AexDpve-EeuQ6PDqa-3Www" name="LegacyStyledElement">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AcdWZPe-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <stereotypes xmi:id="_AexDp_e-EeuQ6PDqa-3Www" name="Annotations">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_Acd9cPe-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <visibility xmi:id="_AexDqPe-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_AexDqfe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_AexDqve-EeuQ6PDqa-3Www" name="show">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_Acd9cve-EeuQ6PDqa-3Www"/>
+      <stereotypes xmi:id="_AexDq_e-EeuQ6PDqa-3Www" name="LegacyStyledElement">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_Acd9c_e-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <stereotypes xmi:id="_AexDrPe-EeuQ6PDqa-3Www" name="Annotations">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_Acd9dPe-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <visibility xmi:id="_AexDrfe-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_AexDrve-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_AexDr_e-EeuQ6PDqa-3Www" name="addCard">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdFBcPe-EeuQ6PDqa-3Www"/>
+      <stereotypes xmi:id="_AexDsPe-EeuQ6PDqa-3Www" name="LegacyStyledElement">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdFBcve-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <stereotypes xmi:id="_AexDsfe-EeuQ6PDqa-3Www" name="Annotations">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdFBc_e-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <visibility xmi:id="_AexDsve-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_AexDs_e-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <parameters xmi:id="_AexDtPe-EeuQ6PDqa-3Www" name="aCard">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdFBcfe-EeuQ6PDqa-3Www"/>
+        <cardinality xmi:id="_AexDtfe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+        <type xmi:id="_AexDtve-EeuQ6PDqa-3Www" name="PlayingCard">
+          <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_Aci18Pe-EeuQ6PDqa-3Www"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AexDt_e-EeuQ6PDqa-3Www" name="dealHand">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdFogPe-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_AexDuPe-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_AexDufe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <parameters xmi:id="_AexDuve-EeuQ6PDqa-3Www" name="aDeck">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdFogfe-EeuQ6PDqa-3Www"/>
+        <cardinality xmi:id="_AexDu_e-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+        <type xmi:id="_AexDvPe-EeuQ6PDqa-3Www" name="CardDeck">
+          <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AcfLkPe-EeuQ6PDqa-3Www"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_Ae-e4Pe-EeuQ6PDqa-3Www" name="CardHand" associationsOut="_Ae8psfe-EeuQ6PDqa-3Www" subclassedBy="_Ae8psPe-EeuQ6PDqa-3Www">
+    <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AchAwPe-EeuQ6PDqa-3Www"/>
+    <visualProperties xmi:id="_Ae-e4fe-EeuQ6PDqa-3Www" position="-33.0,-75.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Ae-e4ve-EeuQ6PDqa-3Www" label="+"/>
+    <attributes xmi:id="_Ae-e4_e-EeuQ6PDqa-3Www" name="hand">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_Achn0Pe-EeuQ6PDqa-3Www"/>
+      <stereotypes xmi:id="_Ae-e5Pe-EeuQ6PDqa-3Www" name="Generics">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AciO4Pe-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <visibility xmi:id="_Ae-e5fe-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_Ae-e5ve-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <type xmi:id="_Ae-e5_e-EeuQ6PDqa-3Www" name="ArrayList">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdB-IPe-EeuQ6PDqa-3Www"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Ae-e6Pe-EeuQ6PDqa-3Www" name="emptyHand">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AciO4fe-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_Ae-e6fe-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_Ae-e6ve-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_Ae-e6_e-EeuQ6PDqa-3Www" name="show">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AciO4ve-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_Ae-e7Pe-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_Ae-e7fe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_Ae-e7ve-EeuQ6PDqa-3Www" name="addCard">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdHdsPe-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_Ae-e7_e-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_Ae-e8Pe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Ae-e8fe-EeuQ6PDqa-3Www" name="aCard">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdHdsfe-EeuQ6PDqa-3Www"/>
+        <cardinality xmi:id="_Ae-e8ve-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+        <type xmi:id="_Ae-e8_e-EeuQ6PDqa-3Www" name="PlayingCard">
+          <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_Aci18Pe-EeuQ6PDqa-3Www"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_AfCJSfe-EeuQ6PDqa-3Www" name="CardDeck" associationsOut="_AfCJQPe-EeuQ6PDqa-3Www">
+    <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AcfLkPe-EeuQ6PDqa-3Www"/>
+    <visualProperties xmi:id="_AfCJSve-EeuQ6PDqa-3Www" position="60.0,-386.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_AfCJS_e-EeuQ6PDqa-3Www" label="+"/>
+    <attributes xmi:id="_AfCJTPe-EeuQ6PDqa-3Www" defaultValue="new LinkedList&lt;PlayingCard>()" name="deckOfCards">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdOLYve-EeuQ6PDqa-3Www"/>
+      <stereotypes xmi:id="_AfCJTfe-EeuQ6PDqa-3Www" name="Generics">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdOycPe-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <stereotypes xmi:id="_AfCJTve-EeuQ6PDqa-3Www" name="LegacyStyledElement">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdPZgfe-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <visibility xmi:id="_AfCJT_e-EeuQ6PDqa-3Www" label="~"/>
+      <cardinality xmi:id="_AfCwUPe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <type xmi:id="_AfCwUfe-EeuQ6PDqa-3Www" name="LinkedList">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdGPkve-EeuQ6PDqa-3Www"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_AfCwUve-EeuQ6PDqa-3Www" defaultValue="54" name="numCardsInDeck">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdPZgve-EeuQ6PDqa-3Www"/>
+      <stereotypes xmi:id="_AfCwU_e-EeuQ6PDqa-3Www" name="LegacyStyledElement">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdPZhPe-EeuQ6PDqa-3Www"/>
+      </stereotypes>
+      <visibility xmi:id="_AfCwVPe-EeuQ6PDqa-3Www" label="-"/>
+      <cardinality xmi:id="_AfCwVfe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <type xmi:id="_AfCwVve-EeuQ6PDqa-3Www" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_AfCwV_e-EeuQ6PDqa-3Www" name="CardDeck">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AcfyoPe-EeuQ6PDqa-3Www"/>
+      <visualProperties xmi:id="_SH4PQPe-EeuQ6PDqa-3Www"/>
+      <keywords xmi:id="_AfCwWPe-EeuQ6PDqa-3Www" keyword="create"/>
+      <visibility xmi:id="_AfCwWfe-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_AfCwWve-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AfCwW_e-EeuQ6PDqa-3Www">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_Acfyo_e-EeuQ6PDqa-3Www"/>
+        <type xmi:id="_AfCwXPe-EeuQ6PDqa-3Www" name="CardDeck">
+          <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AcfLkPe-EeuQ6PDqa-3Www"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_AfCwXfe-EeuQ6PDqa-3Www" name="showDeck">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AcfypPe-EeuQ6PDqa-3Www"/>
+      <visualProperties xmi:id="_SH4PQfe-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_AfCwXve-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_AfCwX_e-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_AfCwYPe-EeuQ6PDqa-3Www" name="anyCardsInDeck">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AcgZsPe-EeuQ6PDqa-3Www"/>
+      <visualProperties xmi:id="_SH42UPe-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_AfCwYfe-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_AfCwYve-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AfCwY_e-EeuQ6PDqa-3Www">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AcgZsfe-EeuQ6PDqa-3Www"/>
+        <type xmi:id="_AfCwZPe-EeuQ6PDqa-3Www" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_AfCwZfe-EeuQ6PDqa-3Www" name="dealCard">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AcgZsve-EeuQ6PDqa-3Www"/>
+      <visualProperties xmi:id="_SH42Ufe-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_AfCwZve-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_AfCwZ_e-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_AfCwaPe-EeuQ6PDqa-3Www">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AdG2ofe-EeuQ6PDqa-3Www"/>
+        <type xmi:id="_AfCwafe-EeuQ6PDqa-3Www" name="PlayingCard">
+          <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_Aci18Pe-EeuQ6PDqa-3Www"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_AfCwave-EeuQ6PDqa-3Www" name="resetDeck">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AcgZs_e-EeuQ6PDqa-3Www"/>
+      <visualProperties xmi:id="_SH42Uve-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_AfCwa_e-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_AfCwbPe-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+      <parameters xmi:id="_AfCwbfe-EeuQ6PDqa-3Www" name="withJoker">
+        <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AcgZtPe-EeuQ6PDqa-3Www"/>
+        <cardinality xmi:id="_AfCwbve-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+        <type xmi:id="_AfCwb_e-EeuQ6PDqa-3Www" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_AfCwcPe-EeuQ6PDqa-3Www" name="shuffleDeck">
+      <modelElement href="13-PlayingCard-Interface-Example-Final.uml#_AcgZtfe-EeuQ6PDqa-3Www"/>
+      <visualProperties xmi:id="_SH42U_e-EeuQ6PDqa-3Www"/>
+      <visibility xmi:id="_AfCwcfe-EeuQ6PDqa-3Www" label="+"/>
+      <cardinality xmi:id="_AfCwcve-EeuQ6PDqa-3Www" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

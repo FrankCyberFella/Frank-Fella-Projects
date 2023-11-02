@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_AQTwwPe-EeuQ6PDqa-3Www" name="_13_PlayingCard_Interface_Example_Final">
+    <eAnnotations xmi:id="_AXMb4Pe-EeuQ6PDqa-3Www" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_AXMb4fe-EeuQ6PDqa-3Www" source="codegen">
+        <details xmi:id="_AXMb4ve-EeuQ6PDqa-3Www" key="codegenDirectory" value="/13-PlayingCard-Interface-Example-Final/src/main/java"/>
+        <details xmi:id="_AebFQPe-EeuQ6PDqa-3Www" key="AssociatedSourceCode" value="/13-PlayingCard-Interface-Example-Final/src/main/java/com/techelevator/BlackJackHand.java;2745583135/1;/13-PlayingCard-Interface-Example-Final/src/main/java/com/techelevator/CardDeck.java;2242108495/1;/13-PlayingCard-Interface-Example-Final/src/main/java/com/techelevator/CardHand.java;2218958835/1;/13-PlayingCard-Interface-Example-Final/src/main/java/com/techelevator/PlayingCard.java;2079297171/1;/13-PlayingCard-Interface-Example-Final/src/main/java/com/techelevator/TestCardApp.java;3682723616/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_Aca6IPe-EeuQ6PDqa-3Www">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_Aca6Ife-EeuQ6PDqa-3Www">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_AcbhMPe-EeuQ6PDqa-3Www">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_AcbhMfe-EeuQ6PDqa-3Www">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_AcbhMve-EeuQ6PDqa-3Www">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_AcbhM_e-EeuQ6PDqa-3Www">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_AcbhNPe-EeuQ6PDqa-3Www">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_AcbhNfe-EeuQ6PDqa-3Www">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_AcbhNve-EeuQ6PDqa-3Www">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_AcPT8Pe-EeuQ6PDqa-3Www" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_AcQiEPe-EeuQ6PDqa-3Www" name="techelevator">
+        <packagedElement xmi:type="uml:Class" xmi:id="_AcZsAPe-EeuQ6PDqa-3Www" name="BlackJackHand">
+          <ownedAttribute xmi:id="_AdNkUPe-EeuQ6PDqa-3Www" name="numCardsInHand" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_AdNkUfe-EeuQ6PDqa-3Www" value="2"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_AdNkU_e-EeuQ6PDqa-3Www" name="aHand" visibility="private" type="_AdB-IPe-EeuQ6PDqa-3Www" association="_AdWHMfe-EeuQ6PDqa-3Www"/>
+          <interfaceRealization xmi:id="_AdEaYPe-EeuQ6PDqa-3Www" client="_AcZsAPe-EeuQ6PDqa-3Www" supplier="_AchAwPe-EeuQ6PDqa-3Www" contract="_AchAwPe-EeuQ6PDqa-3Www"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdR1wPe-EeuQ6PDqa-3Www" name="BlackJackHand" specification="_AccIQPe-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AdR1wfe-EeuQ6PDqa-3Www" type="_AcZsAPe-EeuQ6PDqa-3Www" direction="return"/>
+            <language>java</language>
+            <body>aHand = new ArrayList&lt;PlayingCard>(numCardsInHand);&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdSc0Pe-EeuQ6PDqa-3Www" name="getHand" specification="_AccIRPe-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AdSc0fe-EeuQ6PDqa-3Www" type="_AdB-IPe-EeuQ6PDqa-3Www" direction="return"/>
+            <language>java</language>
+            <body>return aHand;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdSc0ve-EeuQ6PDqa-3Www" name="addCard" specification="_AdFBcPe-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AdSc0_e-EeuQ6PDqa-3Www" name="aCard" type="_Aci18Pe-EeuQ6PDqa-3Www"/>
+            <language>java</language>
+            <body>aHand.add(aCard);&#xD;
+		numCardsInHand++;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdSc1Pe-EeuQ6PDqa-3Www" name="emptyHand" specification="_AcdWY_e-EeuQ6PDqa-3Www">
+            <language>java</language>
+            <body>aHand.clear();&#xD;
+&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdSc1fe-EeuQ6PDqa-3Www" name="show" specification="_Acd9cve-EeuQ6PDqa-3Www">
+            <language>java</language>
+            <body>for (PlayingCard aCard : aHand)&#xD;
+		{&#xD;
+			System.out.println(aCard);&#xD;
+		}&#xD;
+			return;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdSc1ve-EeuQ6PDqa-3Www" name="dealHand" specification="_AdFogPe-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AdSc1_e-EeuQ6PDqa-3Www" name="aDeck" type="_AcfLkPe-EeuQ6PDqa-3Www"/>
+            <language>java</language>
+            <body>for (int i=0; i &lt; numCardsInHand; i++ ) {&#xD;
+			aHand.add(aDeck.dealCard());&#xD;
+		}	&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_AccIQPe-EeuQ6PDqa-3Www" name="BlackJackHand" method="_AdR1wPe-EeuQ6PDqa-3Www">
+            <eAnnotations xmi:id="_AccIQfe-EeuQ6PDqa-3Www" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_AccIQve-EeuQ6PDqa-3Www" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_AccIQ_e-EeuQ6PDqa-3Www" type="_AcZsAPe-EeuQ6PDqa-3Www" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_AccIRPe-EeuQ6PDqa-3Www" name="getHand" method="_AdSc0Pe-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AdKhAPe-EeuQ6PDqa-3Www" type="_AdB-IPe-EeuQ6PDqa-3Www" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_AcdWY_e-EeuQ6PDqa-3Www" name="emptyHand" method="_AdSc1Pe-EeuQ6PDqa-3Www"/>
+          <ownedOperation xmi:id="_Acd9cve-EeuQ6PDqa-3Www" name="show" method="_AdSc1fe-EeuQ6PDqa-3Www"/>
+          <ownedOperation xmi:id="_AdFBcPe-EeuQ6PDqa-3Www" name="addCard" method="_AdSc0ve-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AdFBcfe-EeuQ6PDqa-3Www" name="aCard" type="_Aci18Pe-EeuQ6PDqa-3Www"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_AdFogPe-EeuQ6PDqa-3Www" name="dealHand" method="_AdSc1ve-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AdFogfe-EeuQ6PDqa-3Www" name="aDeck" type="_AcfLkPe-EeuQ6PDqa-3Www"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_AcfLkPe-EeuQ6PDqa-3Www" name="CardDeck">
+          <ownedAttribute xmi:id="_AdOLYve-EeuQ6PDqa-3Www" name="deckOfCards" visibility="package" type="_AdGPkve-EeuQ6PDqa-3Www" association="_AdWHNPe-EeuQ6PDqa-3Www">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_AdPZgPe-EeuQ6PDqa-3Www" value="new LinkedList&lt;PlayingCard>()"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_AdPZgve-EeuQ6PDqa-3Www" name="numCardsInDeck" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_AdPZg_e-EeuQ6PDqa-3Www" value="54"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdSc2Pe-EeuQ6PDqa-3Www" name="CardDeck" specification="_AcfyoPe-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AdSc2fe-EeuQ6PDqa-3Www" type="_AcfLkPe-EeuQ6PDqa-3Www" direction="return"/>
+            <language>java</language>
+            <body>resetDeck(true); // reset deck with jokers&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdSc2ve-EeuQ6PDqa-3Www" name="showDeck" specification="_AcfypPe-EeuQ6PDqa-3Www">
+            <language>java</language>
+            <body>System.out.println(&quot;Number of Cards in Deck: &quot; + deckOfCards.size());&#xD;
+		for (PlayingCard aCard : deckOfCards) {&#xD;
+			System.out.println(aCard);&#xD;
+		}&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdSc2_e-EeuQ6PDqa-3Www" name="anyCardsInDeck" specification="_AcgZsPe-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AdSc3Pe-EeuQ6PDqa-3Www" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>if (deckOfCards.size() > 0) {&#xD;
+			return true;&#xD;
+		}&#xD;
+		else {&#xD;
+			return false;&#xD;
+		}&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdTD4Pe-EeuQ6PDqa-3Www" name="dealCard" specification="_AcgZsve-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AdTD4fe-EeuQ6PDqa-3Www" type="_Aci18Pe-EeuQ6PDqa-3Www" direction="return"/>
+            <language>java</language>
+            <body>// return teh first card in the deck, unless it's empty&#xD;
+		if (deckOfCards.size() > 0) {&#xD;
+			return deckOfCards.remove();&#xD;
+		}&#xD;
+		else {&#xD;
+			 return null;&#xD;
+		}&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdTD4ve-EeuQ6PDqa-3Www" name="resetDeck" specification="_AcgZs_e-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AdTD4_e-EeuQ6PDqa-3Www" name="withJoker">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>// Create a deck of PlayingCards withoptional Jokers&#xD;
+		deckOfCards.clear();&#xD;
+&#xD;
+		for (int i = 1; i &lt; 14; i++) {&#xD;
+			deckOfCards.add(new PlayingCard(i, &quot;CLUBS&quot;));&#xD;
+		}&#xD;
+		for (int i = 1; i &lt; 14; i++) {&#xD;
+			deckOfCards.add(new PlayingCard(i, &quot;HEARTS&quot;));&#xD;
+		}&#xD;
+		for (int i = 1; i &lt; 14; i++) {&#xD;
+			deckOfCards.add(new PlayingCard(i, &quot;Spades&quot;));&#xD;
+		}&#xD;
+		for (int i = 1; i &lt; 14; i++) {&#xD;
+			deckOfCards.add(new PlayingCard(i, &quot;DIAMONDS&quot;));&#xD;
+		}&#xD;
+&#xD;
+		if (withJoker) {&#xD;
+			deckOfCards.add(new PlayingCard(0, &quot;JOKER&quot;));&#xD;
+			deckOfCards.add(new PlayingCard(0, &quot;JOKER&quot;));&#xD;
+		}&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdTD5Pe-EeuQ6PDqa-3Www" name="shuffleDeck" specification="_AcgZtfe-EeuQ6PDqa-3Www">
+            <language>java</language>
+            <body>// Use the Collections class shuffle method to randomize the cards in the deck&#xD;
+		resetDeck(false);                  // give me a new deck without Jokers (false)&#xD;
+		Collections.shuffle(deckOfCards);  // Randomize the cards in the deck&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_AcfyoPe-EeuQ6PDqa-3Www" name="CardDeck" method="_AdSc2Pe-EeuQ6PDqa-3Www">
+            <eAnnotations xmi:id="_Acfyofe-EeuQ6PDqa-3Www" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_Acfyove-EeuQ6PDqa-3Www" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_Acfyo_e-EeuQ6PDqa-3Www" type="_AcfLkPe-EeuQ6PDqa-3Www" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_AcfypPe-EeuQ6PDqa-3Www" name="showDeck" method="_AdSc2ve-EeuQ6PDqa-3Www"/>
+          <ownedOperation xmi:id="_AcgZsPe-EeuQ6PDqa-3Www" name="anyCardsInDeck" method="_AdSc2_e-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AcgZsfe-EeuQ6PDqa-3Www" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_AcgZsve-EeuQ6PDqa-3Www" name="dealCard" method="_AdTD4Pe-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AdG2ofe-EeuQ6PDqa-3Www" type="_Aci18Pe-EeuQ6PDqa-3Www" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_AcgZs_e-EeuQ6PDqa-3Www" name="resetDeck" method="_AdTD4ve-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AcgZtPe-EeuQ6PDqa-3Www" name="withJoker">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_AcgZtfe-EeuQ6PDqa-3Www" name="shuffleDeck" method="_AdTD5Pe-EeuQ6PDqa-3Www"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_AchAwPe-EeuQ6PDqa-3Www" name="CardHand">
+          <ownedAttribute xmi:id="_Achn0Pe-EeuQ6PDqa-3Www" name="hand" type="_AdB-IPe-EeuQ6PDqa-3Www" isReadOnly="true" association="_AdVgIPe-EeuQ6PDqa-3Www"/>
+          <ownedOperation xmi:id="_AciO4fe-EeuQ6PDqa-3Www" name="emptyHand"/>
+          <ownedOperation xmi:id="_AciO4ve-EeuQ6PDqa-3Www" name="show"/>
+          <ownedOperation xmi:id="_AdHdsPe-EeuQ6PDqa-3Www" name="addCard">
+            <ownedParameter xmi:id="_AdHdsfe-EeuQ6PDqa-3Www" name="aCard" type="_Aci18Pe-EeuQ6PDqa-3Www"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Aci18Pe-EeuQ6PDqa-3Www" name="PlayingCard">
+          <ownedAttribute xmi:id="_AdQAkPe-EeuQ6PDqa-3Www" name="DEFAULTCARDVALUE" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_AdQAkfe-EeuQ6PDqa-3Www" value="0"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_AdQAkve-EeuQ6PDqa-3Www" name="DEFAULTCOLOR" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_AdQAk_e-EeuQ6PDqa-3Www" value="&quot;BLACK&quot;"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_AdQAlPe-EeuQ6PDqa-3Www" name="DEFAULTSUIT" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_AdQAlfe-EeuQ6PDqa-3Www" value="&quot;JOKER&quot;"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_AdQAlve-EeuQ6PDqa-3Www" name="MAXVALUE" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_AdQAl_e-EeuQ6PDqa-3Www" value="13"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_AdQnoPe-EeuQ6PDqa-3Www" name="MINVALUE" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_AdQnofe-EeuQ6PDqa-3Www" value="0"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_AdQnove-EeuQ6PDqa-3Www" name="suitMap" visibility="private" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <qualifier xmi:id="_AdQnpfe-EeuQ6PDqa-3Www">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </qualifier>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_AdQno_e-EeuQ6PDqa-3Www" value="new HashMap&lt;String , String>()"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_AdROsPe-EeuQ6PDqa-3Www" name="valueMap" visibility="private" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <qualifier xmi:id="_AdROs_e-EeuQ6PDqa-3Www">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </qualifier>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_AdROsfe-EeuQ6PDqa-3Www" value="new TreeMap&lt;Integer, String>()"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_AdROtPe-EeuQ6PDqa-3Www" name="value" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_AdROtfe-EeuQ6PDqa-3Www" name="color" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_AdROtve-EeuQ6PDqa-3Www" name="suit" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdTD5fe-EeuQ6PDqa-3Www" name="_initializer1" specification="_AcjdAPe-EeuQ6PDqa-3Www">
+            <language>java</language>
+            <body>initializeMaps(); // static method to initialize maps&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdTD5ve-EeuQ6PDqa-3Www" name="PlayingCard" specification="_AckEEfe-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AdTD5_e-EeuQ6PDqa-3Www" name="value">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_AdTD6Pe-EeuQ6PDqa-3Www" name="suit">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_AdTD6fe-EeuQ6PDqa-3Www" type="_Aci18Pe-EeuQ6PDqa-3Www" direction="return"/>
+            <language>java</language>
+            <body>setValue(value);&#xD;
+		setSuit(suit);     // suit must be set before setColor can run successfully&#xD;
+		setColor();&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdTD6ve-EeuQ6PDqa-3Www" name="setValue" specification="_AckrIPe-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AdTD6_e-EeuQ6PDqa-3Www" name="value">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>if (value >= MINVALUE &amp;&amp; value &lt;= MAXVALUE) { // if valid value specified&#xD;
+		this.value = value;                           // set value to value specified&#xD;
+		}&#xD;
+		else {&#xD;
+			this.value = DEFAULTCARDVALUE;            // set value to default if invalid value specified&#xD;
+	    }&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdTD7Pe-EeuQ6PDqa-3Www" name="setColor" specification="_AckrIve-EeuQ6PDqa-3Www">
+            <language>java</language>
+            <body>this.color = this.suitMap.get(suit.toUpperCase());&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdTD7fe-EeuQ6PDqa-3Www" name="setSuit" specification="_AckrI_e-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AdTD7ve-EeuQ6PDqa-3Www" name="suit">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>this.suit = suit.toUpperCase();&#xD;
+		if (this.suit == null) {         // if invalid suit specified&#xD;
+			this.suit = DEFAULTSUIT;     // set suit to default suit&#xD;
+		}&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdTq8Pe-EeuQ6PDqa-3Www" name="getValueName" specification="_AckrJfe-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AdTq8fe-EeuQ6PDqa-3Www" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return valueMap.get(getValue());&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdTq8ve-EeuQ6PDqa-3Www" name="initializeMaps" specification="_AclSMfe-EeuQ6PDqa-3Www">
+            <language>java</language>
+            <body>suitMap.put(&quot;SPADES&quot;   , &quot;BLACK&quot;);&#xD;
+		suitMap.put(&quot;CLUBS&quot;    , &quot;BLACK&quot;);&#xD;
+		suitMap.put(&quot;DIAMONDS&quot; , &quot;RED&quot;);&#xD;
+		suitMap.put(&quot;HEARTS&quot;   , &quot;RED&quot;);&#xD;
+		suitMap.put(DEFAULTSUIT, DEFAULTCOLOR);&#xD;
+		&#xD;
+		valueMap.put(0,&quot;Joker&quot;);&#xD;
+		valueMap.put(1,&quot;Ace&quot;);&#xD;
+		valueMap.put(2,&quot;Two&quot;);&#xD;
+		valueMap.put(3,&quot;Three&quot;);&#xD;
+		valueMap.put(4,&quot;Four&quot;);&#xD;
+		valueMap.put(5,&quot;Five&quot;);&#xD;
+		valueMap.put(6,&quot;Six&quot;);&#xD;
+		valueMap.put(7,&quot;Seven&quot;);&#xD;
+		valueMap.put(8,&quot;Eight&quot;);&#xD;
+		valueMap.put(9,&quot;Nine&quot;);&#xD;
+		valueMap.put(10,&quot;Ten&quot;);&#xD;
+		valueMap.put(11,&quot;Jack&quot;);&#xD;
+		valueMap.put(12,&quot;Queen&quot;);&#xD;
+		valueMap.put(13,&quot;King&quot;);&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdTq8_e-EeuQ6PDqa-3Www" name="toString" specification="_AclSM_e-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AdTq9Pe-EeuQ6PDqa-3Www" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return &quot;PlayingCard [value=&quot; + value + &quot;, color=&quot; + color + &quot;, suit=&quot; + suit + &quot;, getValue()=&quot; + getValue()&#xD;
+				+ &quot; getValueName()=&quot; + getValueName() + &quot;, getColor()=&quot; + getColor() + &quot;, getSuit()=&quot; + getSuit() + &quot;]&quot;;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdTq9fe-EeuQ6PDqa-3Www" name="equals" specification="_AdLvI_e-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AdTq9ve-EeuQ6PDqa-3Www" name="obj" type="_AdLvIfe-EeuQ6PDqa-3Www"/>
+            <ownedParameter xmi:id="_AdTq9_e-EeuQ6PDqa-3Www" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>if (this == obj) {  // If compare a PlayingCard to itself&#xD;
+			return true;&#xD;
+		}&#xD;
+		if (obj == null) {  // If compare to an undefined PlayingCard&#xD;
+			return false;&#xD;
+		}&#xD;
+		if (getClass() != obj.getClass()) {  // If compare to an object of a different class&#xD;
+			return false;                    // getClass() return the Class of an object&#xD;
+		}&#xD;
+		PlayingCard other = (PlayingCard) obj;  // Define a PlayingCard for the object that was passed&#xD;
+		if (color != other.color) {&#xD;
+			return false;&#xD;
+		}&#xD;
+		if (suit != other.suit) {&#xD;
+			return false;&#xD;
+		}&#xD;
+		if (value != other.value) {&#xD;
+			return false;&#xD;
+		}&#xD;
+		return true;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_AcjdAPe-EeuQ6PDqa-3Www" name="_initializer1" isStatic="true" method="_AdTD5fe-EeuQ6PDqa-3Www">
+            <eAnnotations xmi:id="_AcjdAfe-EeuQ6PDqa-3Www" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_AcjdAve-EeuQ6PDqa-3Www" key="init"/>
+            </eAnnotations>
+          </ownedOperation>
+          <ownedOperation xmi:id="_AckEEfe-EeuQ6PDqa-3Www" name="PlayingCard" method="_AdTD5ve-EeuQ6PDqa-3Www">
+            <eAnnotations xmi:id="_AckEFPe-EeuQ6PDqa-3Www" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_AckEFfe-EeuQ6PDqa-3Www" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_AckEEve-EeuQ6PDqa-3Www" name="value">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_AckEE_e-EeuQ6PDqa-3Www" name="suit">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_AckEFve-EeuQ6PDqa-3Www" type="_Aci18Pe-EeuQ6PDqa-3Www" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_AckrIPe-EeuQ6PDqa-3Www" name="setValue" method="_AdTD6ve-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AckrIfe-EeuQ6PDqa-3Www" name="value">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_AckrIve-EeuQ6PDqa-3Www" name="setColor" method="_AdTD7Pe-EeuQ6PDqa-3Www"/>
+          <ownedOperation xmi:id="_AckrI_e-EeuQ6PDqa-3Www" name="setSuit" method="_AdTD7fe-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AckrJPe-EeuQ6PDqa-3Www" name="suit">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_AckrJfe-EeuQ6PDqa-3Www" name="getValueName" method="_AdTq8Pe-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AclSMPe-EeuQ6PDqa-3Www" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_AclSMfe-EeuQ6PDqa-3Www" name="initializeMaps" visibility="private" isStatic="true" method="_AdTq8ve-EeuQ6PDqa-3Www"/>
+          <ownedOperation xmi:id="_AclSM_e-EeuQ6PDqa-3Www" name="toString" method="_AdTq8_e-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AclSNPe-EeuQ6PDqa-3Www" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_AdLvI_e-EeuQ6PDqa-3Www" name="equals" method="_AdTq9fe-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AdMWMPe-EeuQ6PDqa-3Www" name="obj" type="_AdLvIfe-EeuQ6PDqa-3Www"/>
+            <ownedParameter xmi:id="_AdMWMfe-EeuQ6PDqa-3Www" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_AcnHYPe-EeuQ6PDqa-3Www" name="TestCardApp">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AdTq-Pe-EeuQ6PDqa-3Www" name="main" specification="_AcnucPe-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_AdTq-fe-EeuQ6PDqa-3Www" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AdTq-ve-EeuQ6PDqa-3Www" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>CardDeck myDeck               = new CardDeck();&#xD;
+		BlackJackHand myBlackJackHand = new BlackJackHand();&#xD;
+&#xD;
+		System.out.println(&quot;-----------------------------------------------------&quot;);&#xD;
+		System.out.println(&quot;-- Showing Cards in Deck                           --&quot;);&#xD;
+		System.out.println(&quot;-----------------------------------------------------&quot;);&#xD;
+&#xD;
+		myDeck.showDeck();&#xD;
+&#xD;
+		System.out.println(&quot;-----------------------------------------------------&quot;);&#xD;
+		System.out.println(&quot;-- Shuffling Deck                                  --&quot;);&#xD;
+		System.out.println(&quot;-----------------------------------------------------&quot;);&#xD;
+		&#xD;
+		myDeck.shuffleDeck();&#xD;
+		myDeck.showDeck();&#xD;
+&#xD;
+		System.out.println(&quot;-----------------------------------------------------&quot;);&#xD;
+		System.out.println(&quot;-- Dealing a BlackJack Hand                        --&quot;);&#xD;
+		System.out.println(&quot;-----------------------------------------------------&quot;);&#xD;
+&#xD;
+		myDeck.resetDeck(false);&#xD;
+		myDeck.shuffleDeck();&#xD;
+&#xD;
+		myBlackJackHand.dealHand(myDeck);&#xD;
+		&#xD;
+		myBlackJackHand.show();&#xD;
+		&#xD;
+		System.out.println(&quot;-----------------------------------------------------&quot;);&#xD;
+		System.out.println(&quot;-- Adding a Card to a BlackJack Hand               --&quot;);&#xD;
+		System.out.println(&quot;-----------------------------------------------------&quot;);&#xD;
+	&#xD;
+		myBlackJackHand.addCard(myDeck.dealCard());&#xD;
+		&#xD;
+		for(PlayingCard aCard : myBlackJackHand.getHand()) {&#xD;
+			System.out.println(aCard);&#xD;
+		}&#xD;
+		&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_AcnucPe-EeuQ6PDqa-3Www" name="main" isStatic="true" method="_AdTq-Pe-EeuQ6PDqa-3Www">
+            <ownedParameter xmi:id="_Acnucfe-EeuQ6PDqa-3Www" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Acnucve-EeuQ6PDqa-3Www" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_AdVgIPe-EeuQ6PDqa-3Www" name="" memberEnd="_AdVgIfe-EeuQ6PDqa-3Www _Achn0Pe-EeuQ6PDqa-3Www">
+          <ownedEnd xmi:id="_AdVgIfe-EeuQ6PDqa-3Www" name="" type="_AchAwPe-EeuQ6PDqa-3Www" association="_AdVgIPe-EeuQ6PDqa-3Www"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_AdWHMfe-EeuQ6PDqa-3Www" name="" memberEnd="_AdWHMve-EeuQ6PDqa-3Www _AdNkU_e-EeuQ6PDqa-3Www">
+          <ownedEnd xmi:id="_AdWHMve-EeuQ6PDqa-3Www" name="" type="_AcZsAPe-EeuQ6PDqa-3Www" association="_AdWHMfe-EeuQ6PDqa-3Www"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_AdWHNPe-EeuQ6PDqa-3Www" name="" memberEnd="_AdWHNfe-EeuQ6PDqa-3Www _AdOLYve-EeuQ6PDqa-3Www">
+          <ownedEnd xmi:id="_AdWHNfe-EeuQ6PDqa-3Www" name="" type="_AcfLkPe-EeuQ6PDqa-3Www" association="_AdWHNPe-EeuQ6PDqa-3Www"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_AcPT8fe-EeuQ6PDqa-3Www" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_AcP7APe-EeuQ6PDqa-3Www" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_AdB-IPe-EeuQ6PDqa-3Www" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_AdGPkPe-EeuQ6PDqa-3Www" name="Collections"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_AdGPkve-EeuQ6PDqa-3Www" name="LinkedList"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_AdIEwPe-EeuQ6PDqa-3Www" name="HashMap"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_AdIEwve-EeuQ6PDqa-3Www" name="Map"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_AdIr0fe-EeuQ6PDqa-3Www" name="TreeMap"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_AdLvIPe-EeuQ6PDqa-3Www" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_AdLvIfe-EeuQ6PDqa-3Www" name="Object"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_AXNqAPe-EeuQ6PDqa-3Www">
+      <eAnnotations xmi:id="_AXNqAfe-EeuQ6PDqa-3Www" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_AXNqAve-EeuQ6PDqa-3Www" base_Package="_AQTwwPe-EeuQ6PDqa-3Www">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Generics xmi:id="_AccvUPe-EeuQ6PDqa-3Www" genericsValue="PlayingCard" base_Element="_AccIRPe-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AcdWYPe-EeuQ6PDqa-3Www" base_Element="_AccIRPe-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:Annotations xmi:id="_AcdWYfe-EeuQ6PDqa-3Www" base_Element="_AccIRPe-EeuQ6PDqa-3Www">
+    <annotations xmi:id="_AcdWYve-EeuQ6PDqa-3Www" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AcdWZPe-EeuQ6PDqa-3Www" base_Element="_AcdWY_e-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:Annotations xmi:id="_Acd9cPe-EeuQ6PDqa-3Www" base_Element="_AcdWY_e-EeuQ6PDqa-3Www">
+    <annotations xmi:id="_Acd9cfe-EeuQ6PDqa-3Www" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Acd9c_e-EeuQ6PDqa-3Www" base_Element="_Acd9cve-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:Annotations xmi:id="_Acd9dPe-EeuQ6PDqa-3Www" base_Element="_Acd9cve-EeuQ6PDqa-3Www">
+    <annotations xmi:id="_Acd9dfe-EeuQ6PDqa-3Www" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_AciO4Pe-EeuQ6PDqa-3Www" genericsValue="PlayingCard" base_Element="_Achn0Pe-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AckEEPe-EeuQ6PDqa-3Www" base_Element="_AcjdAPe-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AclSMve-EeuQ6PDqa-3Www" base_Element="_AclSMfe-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Acl5QPe-EeuQ6PDqa-3Www" base_Element="_AclSM_e-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:Annotations xmi:id="_Acl5Qfe-EeuQ6PDqa-3Www" base_Element="_AclSM_e-EeuQ6PDqa-3Www">
+    <annotations xmi:id="_Acl5Qve-EeuQ6PDqa-3Www" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_AdClMPe-EeuQ6PDqa-3Www" base_Element="_AdB-IPe-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AdFBcve-EeuQ6PDqa-3Www" base_Element="_AdFBcPe-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:Annotations xmi:id="_AdFBc_e-EeuQ6PDqa-3Www" base_Element="_AdFBcPe-EeuQ6PDqa-3Www">
+    <annotations xmi:id="_AdFBdPe-EeuQ6PDqa-3Www" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_AdGPkfe-EeuQ6PDqa-3Www" base_Element="_AdGPkPe-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:Reference xmi:id="_AdG2oPe-EeuQ6PDqa-3Www" base_Element="_AdGPkve-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:Reference xmi:id="_AdIEwfe-EeuQ6PDqa-3Www" base_Element="_AdIEwPe-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:Reference xmi:id="_AdIr0Pe-EeuQ6PDqa-3Www" base_Element="_AdIEwve-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:Reference xmi:id="_AdIr0ve-EeuQ6PDqa-3Www" base_Element="_AdIr0fe-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:Reference xmi:id="_AdLvIve-EeuQ6PDqa-3Www" base_Element="_AdLvIfe-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AdMWMve-EeuQ6PDqa-3Www" base_Element="_AdLvI_e-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:Annotations xmi:id="_AdMWM_e-EeuQ6PDqa-3Www" base_Element="_AdLvI_e-EeuQ6PDqa-3Www">
+    <annotations xmi:id="_AdMWNPe-EeuQ6PDqa-3Www" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AdNkUve-EeuQ6PDqa-3Www" base_Element="_AdNkUPe-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:Generics xmi:id="_AdOLYPe-EeuQ6PDqa-3Www" genericsValue="PlayingCard" base_Element="_AdNkU_e-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AdOLYfe-EeuQ6PDqa-3Www" base_Element="_AdNkU_e-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:Generics xmi:id="_AdOycPe-EeuQ6PDqa-3Www" genericsValue="PlayingCard" base_Element="_AdOLYve-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AdPZgfe-EeuQ6PDqa-3Www" base_Element="_AdOLYve-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AdPZhPe-EeuQ6PDqa-3Www" base_Element="_AdPZgve-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AdQnpPe-EeuQ6PDqa-3Www" base_Element="_AdQnove-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AdROsve-EeuQ6PDqa-3Www" base_Element="_AdROsPe-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:Reference xmi:id="_AdWHMPe-EeuQ6PDqa-3Www" base_Element="_AdVgIPe-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:Reference xmi:id="_AdWHM_e-EeuQ6PDqa-3Www" base_Element="_AdWHMfe-EeuQ6PDqa-3Www"/>
+  <UMLLabProfile:Reference xmi:id="_AdWuQPe-EeuQ6PDqa-3Www" base_Element="_AdWHNPe-EeuQ6PDqa-3Www"/>
+</xmi:XMI>
