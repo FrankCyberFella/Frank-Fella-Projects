@@ -16,6 +16,10 @@ Folders contents:
   - **API-Review-Vue-FrontEnd** - Vue.js (Vue2) front end using axios API calls
 - **AWS-Lambda-API-Example** - Example of using an AWS Lambda function as an API
 - **AWS-Lampda-Intro-Simple-Example** - Demonstrate structure of an AWS Lambda function with application code
+- **Inheritance-Polymorphism-Example-Using-Enums** - Intro to Inheritance and Polymorphism using enums to validate data
+- **Inheritance-Polymorphism-Example-Using-Maps** - Intro to Inheritance and Polymorphism using Maps to validate data
+  - **PlayingCard-Abstract-Example** - Example using abstract class for super class
+  - **PlayingCard-Interface-Example** - Example using interface(s)
 - **Java-Fundamentals-Review-PlayingCard** - Demonstrates all Java language features used in the intro to Java programming section of training.
 - **Relational-DB-Spring-Boot-2-Java-API-Review** - Demonstrates all the PostgreSQL relational database topics taught as well as server side REST API methods presented in class 
 
