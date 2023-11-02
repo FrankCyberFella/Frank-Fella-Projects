@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Description: Unit_3_Preparedness_Task
+
+Resources:
+
+  HelloWorldLambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: Unit_3_Preparedness_Task
+      Runtime: java11
+      MemorySize: 512
+      Handler: lambdaapp.LambdaHandler.handleRequest
+      CodeUri: target/lambda.jar

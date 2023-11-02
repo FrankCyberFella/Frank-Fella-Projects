@@ -1,0 +1,9 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: lambdaapp.LambdaHandler::handleRequest
+      CodeUri: s3://unit3lambdafunctions/92ffbc78fcf9afafa349a81548b4fd4b
+      Runtime: java11
