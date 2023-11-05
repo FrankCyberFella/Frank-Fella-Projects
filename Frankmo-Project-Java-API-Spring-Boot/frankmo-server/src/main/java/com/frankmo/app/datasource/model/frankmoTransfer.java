@@ -3,7 +3,7 @@ package com.frankmo.app.datasource.model;
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public class frankmoTransfer {
+public class FrankmoTransfer {
 
     // data base stores numeric value:    0  ,    1,       2,        3
     public static enum TRANSFER_STATUS {NONE, PENDING, APPROVED, REJECTED}
@@ -12,13 +12,13 @@ public class frankmoTransfer {
     private Long            transferId;
     private TRANSFER_STATUS transferStatus;
     private TRANSFER_TYPE   transferType;
-    private frankmoAccount fromfrankmoAccount;
-    private frankmoAccount tofrankmoAccount;
+    private FrankmoAccount fromfrankmoAccount;
+    private FrankmoAccount tofrankmoAccount;
     private BigDecimal      amount;
 
-    public frankmoTransfer(){}  // default constructor in case Java needs it
+    public FrankmoTransfer(){}  // default constructor in case Java needs it
 
-    public frankmoTransfer(Long transferId, TRANSFER_STATUS transferStatus, TRANSFER_TYPE transferType, frankmoAccount fromfrankmoAccount, frankmoAccount tofrankmoAccount, BigDecimal amount) {
+    public FrankmoTransfer(Long transferId, TRANSFER_STATUS transferStatus, TRANSFER_TYPE transferType, FrankmoAccount fromfrankmoAccount, FrankmoAccount tofrankmoAccount, BigDecimal amount) {
         this.transferId = transferId;
         this.transferStatus = transferStatus;
         this.transferType = transferType;
@@ -27,7 +27,7 @@ public class frankmoTransfer {
         this.amount = amount;
     }
 
-    public frankmoTransfer(frankmoTransfer aTransfer) {
+    public FrankmoTransfer(FrankmoTransfer aTransfer) {
         this.transferId       = aTransfer.getTransferId();
         this.transferStatus   = aTransfer.getTransferStatus();
         this.transferType     = aTransfer.getTransferType();
@@ -57,17 +57,17 @@ public class frankmoTransfer {
         this.transferType = transferType;
     }
 
-    public frankmoAccount getFromfrankmoAccount() {
+    public FrankmoAccount getFromfrankmoAccount() {
         return fromfrankmoAccount;
     }
-    public void         setFromfrankmoAccount(frankmoAccount fromfrankmoAccount) {
+    public void         setFromfrankmoAccount(FrankmoAccount fromfrankmoAccount) {
         this.fromfrankmoAccount = fromfrankmoAccount;
     }
 
-    public frankmoAccount getTofrankmoAccount() {
+    public FrankmoAccount getTofrankmoAccount() {
         return tofrankmoAccount;
     }
-    public void         setTofrankmoAccount(frankmoAccount tofrankmoAccount) {
+    public void         setTofrankmoAccount(FrankmoAccount tofrankmoAccount) {
         this.tofrankmoAccount = tofrankmoAccount;
     }
 
@@ -93,8 +93,8 @@ public class frankmoTransfer {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof frankmoTransfer)) return false;
-        frankmoTransfer frankmoTransfer = (frankmoTransfer) o;
+        if (!(o instanceof FrankmoTransfer)) return false;
+        FrankmoTransfer frankmoTransfer = (FrankmoTransfer) o;
         return getTransferId() == frankmoTransfer.getTransferId() && getTransferStatus() == frankmoTransfer.getTransferStatus() && getTransferType() == frankmoTransfer.getTransferType() && Objects.equals(getFromfrankmoAccount(), frankmoTransfer.getFromfrankmoAccount()) && Objects.equals(getTofrankmoAccount(), frankmoTransfer.getTofrankmoAccount());
     }
 

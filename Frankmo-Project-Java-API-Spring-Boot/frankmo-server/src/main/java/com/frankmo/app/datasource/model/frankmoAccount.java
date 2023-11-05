@@ -3,16 +3,16 @@ package com.frankmo.app.datasource.model;
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public class frankmoAccount {
+public class FrankmoAccount {
 
     private Long          account_id;
     private int           user_id;
     private BigDecimal    balance;
 
-    public frankmoAccount() {
+    public FrankmoAccount() {
     }
 
-    public frankmoAccount(Long account_id, int user_id, BigDecimal balance) {
+    public FrankmoAccount(Long account_id, int user_id, BigDecimal balance) {
         this.account_id = account_id;
         this.user_id = user_id;
         this.balance = balance;
@@ -53,8 +53,8 @@ public class frankmoAccount {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof frankmoAccount)) return false;
-        frankmoAccount that = (frankmoAccount) o;
+        if (!(o instanceof FrankmoAccount)) return false;
+        FrankmoAccount that = (FrankmoAccount) o;
         return getAccount_id() == that.getAccount_id() && getUser_id() == that.getUser_id();
     }
 

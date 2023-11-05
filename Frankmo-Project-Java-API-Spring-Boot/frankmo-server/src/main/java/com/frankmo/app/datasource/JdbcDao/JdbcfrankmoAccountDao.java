@@ -1,8 +1,8 @@
 package com.frankmo.app.datasource.JdbcDao;
 
 
-import com.frankmo.app.datasource.dao.frankmoAccountDao;
-import com.frankmo.app.datasource.model.frankmoAccount;
+import com.frankmo.app.datasource.dao.FrankmoAccountDao;
+import com.frankmo.app.datasource.model.FrankmoAccount;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
 import org.springframework.stereotype.Component;
@@ -11,18 +11,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class JdbcfrankmoAccountDao implements frankmoAccountDao {
+public class JdbcFrankmoAccountDao implements FrankmoAccountDao {
 
     private JdbcTemplate thefrankmoDataBase;
 
-    public JdbcfrankmoAccountDao(JdbcTemplate theInjectedJdbcTemplate) {
+    public JdbcFrankmoAccountDao(JdbcTemplate theInjectedJdbcTemplate) {
         this.thefrankmoDataBase = theInjectedJdbcTemplate;
     }
 
     @Override
-    public List<frankmoAccount> getAllAccounts() {
+    public List<FrankmoAccount> getAllAccounts() {
 
-        List<frankmoAccount> allAccounts = new ArrayList();
+        List<FrankmoAccount> allAccounts = new ArrayList();
 
         String getAccountsSQL = "select account_id"
                 +"      ,user_id  "
@@ -39,9 +39,9 @@ public class JdbcfrankmoAccountDao implements frankmoAccountDao {
 
 
     @Override
-    public List<frankmoAccount> getAccountsForAUserId(int theUserId) {
+    public List<FrankmoAccount> getAccountsForAUserId(int theUserId) {
 
-        List<frankmoAccount> userAccounts = new ArrayList();
+        List<FrankmoAccount> userAccounts = new ArrayList();
 
         String getAccountsSQL = "select account_id"
                                +"      ,user_id  "
@@ -59,9 +59,9 @@ public class JdbcfrankmoAccountDao implements frankmoAccountDao {
     }
 
     @Override
-    public frankmoAccount getAccountForAccountId(Long theAccountId) {
+    public FrankmoAccount getAccountForAccountId(Long theAccountId) {
 
-        frankmoAccount theAccount = null;
+        FrankmoAccount theAccount = null;
 
         String getAccountsSQL = "select account_id"
                                +"      ,user_id  "
@@ -80,9 +80,9 @@ public class JdbcfrankmoAccountDao implements frankmoAccountDao {
 
 
     @Override
-    public frankmoAccount saveAccount(frankmoAccount frankmoAccount2Save) {
+    public FrankmoAccount saveAccount(FrankmoAccount frankmoAccount2Save) {
 
-       frankmoAccount newAccount = new frankmoAccount(frankmoAccount2Save.getAccount_id()
+       FrankmoAccount newAccount = new FrankmoAccount(frankmoAccount2Save.getAccount_id()
                                                  ,frankmoAccount2Save.getUser_id()
                                                  ,frankmoAccount2Save.getBalance());
        // Database manager will assign new account_id which we are asking to be returned
@@ -103,7 +103,7 @@ public class JdbcfrankmoAccountDao implements frankmoAccountDao {
     }
 
     @Override
-    public frankmoAccount updateAccount(frankmoAccount frankmoAccount2Update) {
+    public FrankmoAccount updateAccount(FrankmoAccount frankmoAccount2Update) {
 
         String updateAccountSQL = "update account "
                                 +" Set balance = ? "
@@ -117,8 +117,8 @@ public class JdbcfrankmoAccountDao implements frankmoAccountDao {
         return getAccountForAccountId(frankmoAccount2Update.getAccount_id());
     }
 
-    private frankmoAccount mapRowToAccount(SqlRowSet resultRow) {
-        return new frankmoAccount(resultRow.getLong("account_id")
+    private FrankmoAccount mapRowToAccount(SqlRowSet resultRow) {
+        return new FrankmoAccount(resultRow.getLong("account_id")
                                ,resultRow.getInt("user_id")
                                ,resultRow.getBigDecimal("balance"));
     }

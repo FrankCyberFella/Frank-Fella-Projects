@@ -1,8 +1,8 @@
 package com.frankmo.app.controller;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
-import com.frankmo.generalpurposeutilities.LogAPIRequest;
 import com.frankmo.app.usermanagement.model.LoginResponseDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -22,6 +22,8 @@ import com.frankmo.app.usermanagement.model.User;
 import com.frankmo.app.javasecurity.jwt.TokenProvider;
 import org.springframework.web.server.ResponseStatusException;
 
+import static com.frankmo.generalpurposeutilities.LogHttpRequest.logHttpRequest;
+
 /**
  * Controller to authenticate users.
  */
@@ -39,9 +41,10 @@ public class AuthenticationController {
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public LoginResponseDto login(@Valid @RequestBody LoginDto loginDto) {
+    public LoginResponseDto login(HttpServletRequest theHttpRequest,       // Get request as an HttpServletRequest object
+                                  @Valid @RequestBody LoginDto loginDto) { // Get JSON from request bodY and create LoginDto object
 
-        LogAPIRequest.logAPICall("POST for path /login for username: " + loginDto.getUsername());
+        logHttpRequest(theHttpRequest);    // Pass the request info to the logging method
 
         UsernamePasswordAuthenticationToken authenticationToken =
                 new UsernamePasswordAuthenticationToken(loginDto.getUsername(), loginDto.getPassword());
@@ -57,9 +60,11 @@ public class AuthenticationController {
 
     @ResponseStatus(HttpStatus.CREATED)
     @RequestMapping(value = "/register", method = RequestMethod.POST)
-    public void register(@Valid @RequestBody RegisterUserDto newUser) {
+    public void register(HttpServletRequest theHttpRequest,             // Get request as an HttpServletRequest object
+                         @Valid @RequestBody RegisterUserDto newUser) { // Get JSON from request bodY and create RegisterUserDto object
 
-        LogAPIRequest.logAPICall("POST for path /register for username: " + newUser.getUsername());
+        logHttpRequest(theHttpRequest);    // Pass the request info to the logging method
+        //LogAPIRequest.logAPICall("POST for path /register for username: " + newUser.getUsername());
 
         if (!userDao.create(newUser.getUsername(), newUser.getPassword())) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "User registration failed.");

@@ -1,20 +1,20 @@
 package com.frankmo.app.datasource.dao;
 
-import com.frankmo.app.datasource.model.frankmoAccount;
+import com.frankmo.app.datasource.model.FrankmoAccount;
 
 import java.util.List;
 
-public interface frankmoAccountDao {
+public interface FrankmoAccountDao {
 
-    public List<frankmoAccount> getAllAccounts();
+    public List<FrankmoAccount> getAllAccounts();
 
-    public frankmoAccount getAccountForAccountId(Long theAccountId);
+    public FrankmoAccount getAccountForAccountId(Long theAccountId);
 
-    public List<frankmoAccount> getAccountsForAUserId(int anUserId);
+    public List<FrankmoAccount> getAccountsForAUserId(int anUserId);
 
-    public frankmoAccount saveAccount(frankmoAccount frankmoAccount2Save);
+    public FrankmoAccount saveAccount(FrankmoAccount frankmoAccount2Save);
 
-    public frankmoAccount updateAccount(frankmoAccount frankmoAccount2Update);
+    public FrankmoAccount updateAccount(FrankmoAccount frankmoAccount2Update);
 
 
 }

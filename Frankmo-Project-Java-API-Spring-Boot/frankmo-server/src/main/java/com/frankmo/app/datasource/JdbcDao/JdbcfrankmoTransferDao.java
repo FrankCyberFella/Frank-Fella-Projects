@@ -1,8 +1,8 @@
 package com.frankmo.app.datasource.JdbcDao;
 
-import com.frankmo.app.datasource.dao.frankmoAccountDao;
-import com.frankmo.app.datasource.dao.frankmoTransferDao;
-import com.frankmo.app.datasource.model.frankmoTransfer;
+import com.frankmo.app.datasource.dao.FrankmoAccountDao;
+import com.frankmo.app.datasource.dao.FrankmoTransferDao;
+import com.frankmo.app.datasource.model.FrankmoTransfer;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
 import org.springframework.stereotype.Component;
@@ -11,19 +11,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class JdbcfrankmoTransferDao implements frankmoTransferDao {
+public class JdbcFrankmoTransferDao implements FrankmoTransferDao {
 
     private JdbcTemplate      thefrankmoDataBase;
-    private frankmoAccountDao thefrankmoAccountDao;
+    private FrankmoAccountDao thefrankmoAccountDao;
 
-    public JdbcfrankmoTransferDao(JdbcTemplate theInjectedJdbcTemplate, frankmoAccountDao theInjectedfrankmoAccountDao) {
+    public JdbcFrankmoTransferDao(JdbcTemplate theInjectedJdbcTemplate, FrankmoAccountDao theInjectedfrankmoAccountDao) {
         this.thefrankmoDataBase = theInjectedJdbcTemplate;
         thefrankmoAccountDao    = theInjectedfrankmoAccountDao;
     }
 
     @Override
-    public frankmoTransfer saveTransfer(frankmoTransfer aTransfer) {
-        frankmoTransfer newTransfer = new frankmoTransfer(aTransfer);
+    public FrankmoTransfer saveTransfer(FrankmoTransfer aTransfer) {
+        FrankmoTransfer newTransfer = new FrankmoTransfer(aTransfer);
 
         String addTransferSql = " insert into transfer "
                               +" (transfer_type_id, transfer_status_id, account_to, account_from, amount) "
@@ -46,8 +46,8 @@ public class JdbcfrankmoTransferDao implements frankmoTransferDao {
     }
 
     @Override
-    public List<frankmoTransfer> getTransfersForUser(int userId) {
-        List<frankmoTransfer> allTransfersForUser = new ArrayList<>();
+    public List<FrankmoTransfer> getTransfersForUser(int userId) {
+        List<FrankmoTransfer> allTransfersForUser = new ArrayList<>();
 
         String getTransfersForUserSql = "select transfer_id "
                                            + " ,transfer_status_id "
@@ -69,9 +69,9 @@ public class JdbcfrankmoTransferDao implements frankmoTransferDao {
     }
 
     @Override
-    public frankmoTransfer getATransferById(Long transferIdRequested) {
+    public FrankmoTransfer getATransferById(Long transferIdRequested) {
 
-        frankmoTransfer aTransfer = null;
+        FrankmoTransfer aTransfer = null;
 
         String getTransfersForUserSql = "select transfer_id "
                 + " ,transfer_status_id "
@@ -91,12 +91,12 @@ public class JdbcfrankmoTransferDao implements frankmoTransferDao {
         return aTransfer;
     }
 
-    frankmoTransfer MapRowToObject(SqlRowSet rowFromSelect) {
-        frankmoTransfer newTransfer = new frankmoTransfer();
+    FrankmoTransfer MapRowToObject(SqlRowSet rowFromSelect) {
+        FrankmoTransfer newTransfer = new FrankmoTransfer();
 
         newTransfer.setTransferId(rowFromSelect.getLong("transfer_id"));
-        newTransfer.setTransferStatus(frankmoTransfer.TRANSFER_STATUS.values()[rowFromSelect.getInt("transfer_status_id")]);
-        newTransfer.setTransferType(frankmoTransfer.TRANSFER_TYPE.values()[rowFromSelect.getInt("transfer_type_id")]);
+        newTransfer.setTransferStatus(FrankmoTransfer.TRANSFER_STATUS.values()[rowFromSelect.getInt("transfer_status_id")]);
+        newTransfer.setTransferType(FrankmoTransfer.TRANSFER_TYPE.values()[rowFromSelect.getInt("transfer_type_id")]);
 
         Long fromAccountId = rowFromSelect.getLong("account_from");
         newTransfer.setFromfrankmoAccount(thefrankmoAccountDao.getAccountForAccountId(fromAccountId));

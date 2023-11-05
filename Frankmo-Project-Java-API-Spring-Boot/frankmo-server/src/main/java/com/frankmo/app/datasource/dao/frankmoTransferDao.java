@@ -1,14 +1,14 @@
 package com.frankmo.app.datasource.dao;
 
-import com.frankmo.app.datasource.model.frankmoTransfer;
+import com.frankmo.app.datasource.model.FrankmoTransfer;
 
 import java.util.List;
 
-public interface frankmoTransferDao {
+public interface FrankmoTransferDao {
 
-    frankmoTransfer saveTransfer(frankmoTransfer aTransfer);
+    FrankmoTransfer saveTransfer(FrankmoTransfer aTransfer);
 
-    List<frankmoTransfer> getTransfersForUser(int userId);
+    List<FrankmoTransfer> getTransfersForUser(int userId);
 
-    frankmoTransfer getATransferById(Long transferId);
+    FrankmoTransfer getATransferById(Long transferId);
 }
