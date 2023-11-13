@@ -1,4 +1,4 @@
-# Frank-Fella-Teaching-Projects
+# Frank-Fella-Projects
 Examples of projects used in Frank Fella's Java training sessions.
 
 Each folder may contain multiple projects showing various features and technology related to the overall focus of the training objective.
