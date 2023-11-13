@@ -21,5 +21,6 @@ Folders contents:
   - **PlayingCard-Abstract-Example** - Example using abstract class for super class
   - **PlayingCard-Interface-Example** - Example using interface(s)
 - **Java-Fundamentals-Review-PlayingCard** - Demonstrates all Java language features used in the intro to Java programming section of training.
-- **Relational-DB-Spring-Boot-2-Java-API-Review** - Demonstrates all the PostgreSQL relational database topics taught as well as server side REST API methods presented in class 
+- **Relational-DB-Spring-Boot-2-Java-API-Review** - Demonstrates all the PostgreSQL relational database topics taught as well as server side REST API methods presented in class
+- **Web-Task-Manager** - Web based task manager/todo list project using Vue front-end and Spring Boot 2 backend with PostgreSQL
 
